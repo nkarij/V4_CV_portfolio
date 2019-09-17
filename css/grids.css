@@ -1,0 +1,89 @@
+/*---------------------------------------------------
+GRIDS
+----------------------------------------------------*/
+
+:root {
+    --header-gridgap: 5px;
+    --header-total-gridgap: calc(var(--header-gridgap) * 9);
+    --grid-height: calc(var(--body-desktop-height));
+    --grid-width: calc(var(--body-desktop-width) - calc(var(--page-padding) * 2));
+    --header-grid-height: calc(var(--body-desktop-height) - calc(var(--page-padding) * 2));
+}
+
+
+/*---------------------------------------------------
+MEDIA QUERIES
+----------------------------------------------------*/
+
+
+@media screen and (min-width: 800px) {
+
+    /* PAGE GRID LAYOUTS
+    ---------------------------------------------------------------*/
+    .grid {
+        height: var(--grid-height);
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        /* denne skal muligvis fjernes/ændres senere */
+        grid-template-rows: 100px 1fr;
+    }
+    
+    .frontpage__column-1 {
+        height: 100%;
+        /* row start, column start, row end, column end */
+        grid-area: 2 / 1 / 2 / 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* denne skal muligvis fjernes/ændres senere */
+        grid-template-rows: 40px 50% 40px 1fr;
+    }
+    
+    .frontpage__column-2 {
+        display: grid;
+        /* row start, column start, row end, column end */
+        grid-area:  2 / 2 / 2 / 2;
+        grid-template-columns: 1fr;
+        /* denne skal muligvis fjernes/ændres senere */
+        grid-template-rows: 40px 50% 40px 1fr;
+    }
+
+
+    /* HALF PAGE GRID HEADER
+    ---------------------------------------------------------------------*/
+
+    /* column 1 */
+    .header {
+         /* row start, column start, row end, column end */
+        grid-area: 1 / 1 / 2 / 1;
+    }
+
+    .frontpage-navigation {
+        grid-area: 3 / 1 / 4 / 1;
+    }
+
+    /* .heading-part1 {
+
+    }
+
+    .heading-part2 {
+  
+    } */
+
+
+    
+
+    /* .menu-left {
+
+    } */
+
+    /* .menu-right {
+
+    } */
+
+
+
+
+
+}
+
