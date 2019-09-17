@@ -24,45 +24,44 @@ html {
 ------------------------------------*/
 .heading {
     font-family: var(--font-heading);
-    font-size: 8rem;
+    font-size: 2rem;
     font-weight: bold;
     font-style: italic;
     margin: 0;
     /* z-index: 4; */
 }
 
+/* PROFILE TEXT, CONTACT INFO, SOME-HEADING */
+.profile-section, .contact-section, .some-menu-heading {
+    font-family: var(--font-heading);
+    font-style: normal;
+    font-size: 1.5rem;
+}
 
-/* NAVIGATION
+/* SOME NAVIGATION
 ------------------------------------*/
 
-.menu-right__link, .menu-left__link {
+.menu-right__link {
     font-family: var(--font-heading);
     color: var(--font-color-primary);
-    font-size: 3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
 }
 
-.menu-right__explainer, .menu-left__explainer {
+.menu-right__explainer {
     margin: 0.5rem 0;
     font-family: var(--font-subheading);
     color: var(--font-color-scnd);
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
-/* SQUARE DECORATION    
-------------------------------------*/
-
-.square {
-    font-family: var(--font-decoration);
-    text-align: center;
-
+ {
+    font-family: var(--font-heading);
 }
 
-.square__letter {
-    font-size: 35rem;
-    color: white;
-    z-index: 4;
-    margin: 0;
-}
+
+
+
+

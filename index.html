@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Gayathri|Livvic:300,400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e7b358accd.js"></script>
     <title>Portfolio</title>
 </head>
 <body class="body">
@@ -14,40 +16,56 @@
         <!--  -->
         <div class="grid__half-page frontpage__column-1">
 
+            <!-- header section -->
             <header class="header">
-
                 <div class="portrait-wrapper">
-                    <image src="https://dummyimage.com/250x250/780c78/fff" class="portrait"></image>
-                </div>
-                
+                    <image src="https://dummyimage.com/200x200/780c78/fff" class="portrait"></image>
+                </div>    
                 <!-- headings -->
-                <h2 class="heading heading-part1">NANNA</h2>
-                <h1 class="heading heading-part2">KARI JENSEN</h1>
-                
+                <h1 class="heading heading-part1">NANNA KARI JENSEN</h1>
+                <h2 class="heading heading-part2">Web developer</h2>
+
+                <!-- Profile text  -->
+                <section class="profile-section">
+                    <h2 class="profile-section__heading">PROFILE</h2>
+                    <p class="profile-section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint reiciendis nobis dolore! Minima omnis quam nesciunt deleniti</p>
+                </section>
+
             </header>
 
-            <!-- content  -->
+            <!-- divider -->
+            <div class="column1-content">
+                <!-- contact info section  -->
+                <address class="contact-section">
+                    <h2 class="contact-section__heading">contact</h2>
+                    <p class="contact-section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint reiciendis nobis dolore! Minima omnis quam nesciunt deleniti</p>
+                </address>
+        
+                <!-- SOME navigation -->
                 
-    
-            <!-- SOME navigation -->
-            <nav class="frontpage-navigation">
-                <ul class="list menu-right">
-                    <li class="menu-right__item">
-                        <a href="#" class="menu_link menu-right__link">Icon</a>
-                        <p class="menu-right__explainer">facebook</p>
-                    </li>
-                    <li class="menu-right__item">
-                        <a href="#" class="menu_link menu-right__link">Icon</a>
-                        <p class="menu-right__explainer">LinkedIn</p>
-                    <li class="menu-right__item">
-                        <a href="#" class="menu_link menu-right__link">Icon</a>
-                        <p class="menu-right__explainer">Lorem ipsum</p>
-                    </li>
-                </ul>
-            </nav>
-            
-        </div>
+                <nav class="frontpage-navigation">
+                    <h2 class="some-menu-heading">Social Media</h2>
+                    <ul class="list menu-right">
+                        <li class="menu-right__item">
+                            <a href="https://www.facebook.com/nannakarijensen" class="menu_link menu-right__link">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <p class="menu-right__explainer">facebook</p>
+                        </li>
+                        <li class="menu-right__item">
+                            <a href="#" class="menu_link menu-right__link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <p class="menu-right__explainer">LinkedIn</p>
+                        <li class="menu-right__item">
+                            <a href="#" class="menu_link menu-right__link">Icon</a>
+                            <p class="menu-right__explainer">Lorem ipsum</p>
+                        </li>
+                    </ul>
+                </nav>
+            </div> <!-- flexbox ends -->
 
+        </div> <!-- column ends -->
         <div class="grid__half-page frontpage__column-2">
             <main class="main main--frontpage">
                 <h2>INDHOLD HER</h2>
