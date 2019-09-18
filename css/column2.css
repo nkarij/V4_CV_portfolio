@@ -1,0 +1,110 @@
+:root {
+    --section-padding: 1rem 5rem;
+    --column-template-size: 100px;
+}
+
+@media screen and (min-width: 800px) {
+
+    /* WHAT I DO BEST SECTION
+    ---------------------------------------------------------------------*/
+    
+    .do-best-section {
+        padding: var(--section-padding);
+    }
+    
+    /* icons */
+    .icon-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .icon-list:first-of-type {
+        margin-bottom: 3rem;
+    }
+
+    /* */
+    .best-list-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .best-list {
+        margin: 0 2.5rem;
+    }
+
+    .best-list__item {
+        list-style-type: disc;
+        margin: 1rem 0;
+    }
+
+
+    /* WORK EXPERIENCE SECTION
+    ---------------------------------------------------------------------*/
+    .experience__list {
+        list-style-type: none;
+        padding: var(--section-padding);
+        margin: 0;
+    }
+
+    .experience__template {
+        display: flex;
+        align-items: center;
+        padding: 0.25em 0;
+        border-bottom: solid 1px grey;
+    }
+
+    .experience__template:first-of-type {
+        border-top: solid 1px grey;
+    }
+
+    .experience__year {
+        width: var(--column-template-size);
+        height: 20px;
+    }
+
+    .bullet-list {  
+        /* sørger for at elementet expanderer sammen med vw */
+        flex-grow: 1;
+    }
+
+    .bullet {
+        margin: 0.2em;
+    }
+
+
+    /* 
+    --------SKILLS SECTION------------------------------------ */
+
+    .skills-list {
+        padding: var(--section-padding);
+    }
+
+    .skills-item {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    .skills-item__description {
+        width: var(--column-template-size);
+        height: 20px;
+    }
+    
+    .skills-item__ranking {
+        display: flex;
+        align-items: center;
+    }
+
+    .skills-circle {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: rgb(161, 97, 97);
+        margin-right: 5px;
+    }
+
+}
+/* media query ends */

@@ -11,9 +11,10 @@
     <title>Portfolio</title>
 </head>
 <body class="body">
+
     <!-- page grid -->
     <div class="grid frontpage">
-        <!--  -->
+        <!-- COLUMN 1 -->
         <div class="grid__half-page frontpage__column-1">
 
             <!-- header section -->
@@ -27,7 +28,7 @@
 
                 <!-- Profile text  -->
                 <section class="profile-section">
-                    <h2 class="profile-section__heading">PROFILE</h2>
+                    <h2 class="sub-heading profile-section__heading">PROFILE</h2>
                     <p class="profile-section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint reiciendis nobis dolore! Minima omnis quam nesciunt deleniti</p>
                 </section>
 
@@ -37,14 +38,15 @@
             <div class="column1-content">
                 <!-- contact info section  -->
                 <address class="contact-section">
-                    <h2 class="contact-section__heading">contact</h2>
+                    <h2 class="sub-heading contact-section__heading">CONTACT</h2>
                     <p class="contact-section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sint reiciendis nobis dolore! Minima omnis quam nesciunt deleniti</p>
                 </address>
         
                 <!-- SOME navigation -->
-                
+                           
                 <nav class="frontpage-navigation">
-                    <h2 class="some-menu-heading">Social Media</h2>
+                    <h2 class="sub-heading some-menu-heading">SOCIAL MEDIA</h2>
+
                     <ul class="list menu-right">
                         <li class="menu-right__item">
                             <a href="https://www.facebook.com/nannakarijensen" class="menu_link menu-right__link">
@@ -65,13 +67,159 @@
                 </nav>
             </div> <!-- flexbox ends -->
 
-        </div> <!-- column ends -->
-        <div class="grid__half-page frontpage__column-2">
-            <main class="main main--frontpage">
-                <h2>INDHOLD HER</h2>
+        </div> <!-- column 1 ends -->
 
-            </main>
-        </div>
+
+        <!-- COLUMN 2  -->
+
+        <div class="column2-wrapper">
+
+            <h2 class="sub-heading">WHAT I DO BEST</h2>
+        
+            <div class="frontpage__column-2">
+
+                
+                <!-- WHAT I DO BEST -->
+                <div class="do-best-section">
+
+                    <!-- icon section -->
+                    <div class="icon-display">
+                        <!-- row -->
+                        <ul class="icon-list">
+                            <li class="icon-item">
+                                <i class="fas fa-object-group"></i>
+                            </li>
+                            <li class="icon-item">
+                                <i class="fas fa-cart-plus"></i>
+                            </li>
+                            <li class="icon-item">
+                                <i class="fas fa-file-code"></i>
+                            </li>
+                        </ul>
+                        <!-- row -->
+                        <ul class="icon-list">
+                            <li class="icon-item">
+                                <i class="fas fa-comments"></i>
+                            </li>
+                            <li class="icon-item">
+                                <i class="fas fa-laptop-code"></i>
+                            </li>
+                            <li class="icon-item">
+                                <i class="fas fa-tasks"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- list section -->
+                    <div class="best-list-section">
+                        <ul class="list best-list">
+                            <li class="best-list__item">Functionality</li>
+                            <li class="best-list__item">Grid & Flexbox</li>
+                            <li class="best-list__item">Readable Code</li>
+                        </ul>
+                        <ul class="list best-list">
+                            <li class="best-list__item">Communication</li>
+                            <li class="best-list__item">Programming</li>
+                            <li class="best-list__item">Getting Things Done</li>
+                        </ul>
+                    </div>
+
+                </div><!-- WHAT I DO ends -->
+
+                <!-- EXPERIENCE SECTION -->
+                <section class="experience-section">
+                    <h2 class="sub-heading experience__heading">WORK EXPERIENCE</h2>
+
+                    <ul class="list experience__list">
+                        <li class="experience__template">
+                            <h3 class="experience__year">YYYY</h3>
+                            <!-- denne section expanderer med sin parent (flex-grow) -->
+                            <ul class="list bullet-list contact__info-container">
+                                <li class="bullet contact__info-name">Navn Efternavn</li>
+                                <li class="bullet contact__info-phone">lorem</li>
+                                <li class="bullet contact__info-phone">lorem</li>
+                            </ul>
+                        </li>
+                        <li class="experience__template">
+                            <h3 class="experience__year">YYYY</h3>
+                            <!-- denne section expanderer med sin parent (flex-grow) -->
+                            <ul class="list bullet-list contact__info-container">
+                                <li class="bullet contact__info-name">Navn Efternavn</li>
+                                <li class="bullet contact__info-phone">lorem</li>
+                                <li class="bullet contact__info-phone">lorem</li>
+                            </ul>
+                        </li>
+                        <li class="experience__template">
+                            <h3 class="experience__year">YYYY</h3>
+                            <!-- denne section expanderer med sin parent (flex-grow) -->
+                            <ul class="list bullet-list contact__info-container">
+                                <li class="bullet contact__info-name">Navn Efternavn</li>
+                                <li class="bullet contact__info-phone">lorem</li>
+                                <li class="bullet contact__info-phone">lorem</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section> <!-- experience section ends -->
+
+                <!-- SKILLS SECTION -->
+                <div class="skills-section">
+                    <h2 class="sub-heading skills-heading">SKILLS</h2>
+                    <div class="skills-list">
+                            
+                        <ul class="skills-item">
+                            <li class="skills-item__description">Javascript</li>
+                            <li class="skills-item__ranking"> 
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                            </li>
+                        </ul>
+                        <ul class="skills-item">
+                            <li class="skills-item__description">Javascript</li>
+                            <li class="skills-item__ranking"> 
+                                <div data-circle="1" class="skills-circle"></div>
+                                <div data-circle="2" class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                            </li>
+                        </ul>
+                        <ul class="skills-item">
+                            <li class="skills-item__description">Javascript</li>
+                            <li class="skills-item__ranking"> 
+                                <div class="skills-circle"></div>
+                                <div data-circle="2" class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                            </li>
+                        </ul>
+                        <ul class="skills-item">
+                            <li class="skills-item__description">Javascript</li>
+                            <li class="skills-item__ranking"> 
+                                <div class="skills-circle"></div>
+                                <div data-circle="2" class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                            </li>
+                        </ul>
+                        <ul class="skills-item">
+                            <li class="skills-item__description">Javascript</li>
+                            <li class="skills-item__ranking"> 
+                                <div class="skills-circle"></div>
+                                <div data-circle="2" class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                                <div class="skills-circle"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- columnt ends -->
+        </div> <!-- column2 wrapper ends -->
 
     </div> <!-- pagewrapper ends -->
 </body>

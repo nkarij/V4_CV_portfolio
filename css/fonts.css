@@ -7,35 +7,49 @@
 :root {
     --font-heading: 'Livvic', sans-serif;
     --font-subheading: 'Gayathri', sans-serif;
-    --font-decoration: 'Open Sans', sans-serif;
+    --font-bullets: 'Open Sans', sans-serif;
     --font-color-primary: #464646;
     --font-color-scnd: #4c5861;
+    --font-decoration: #04233a;
+    --bullet-items-size: 1.5rem; 
 }
 
 html {
     font-size: 10px;
 }
 
-
-/* FRONTPAGE
-----------------------------------------------------------------------------*/
+/* COLUMN 1
+-------------------------------------------------------------------------*/
 
 /* PAGE HEADINGS
 ------------------------------------*/
 .heading {
     font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.heading-part1 {
+    margin-bottom: 0.5rem;
+}
+
+.heading-part2 {
+    margin-top: 0;
+}
+
+.sub-heading {
+    font-family: var(--font-subheading);
     font-size: 2rem;
     font-weight: bold;
-    font-style: italic;
     margin: 0;
+    
     /* z-index: 4; */
 }
 
-/* PROFILE TEXT, CONTACT INFO, SOME-HEADING */
-.profile-section, .contact-section, .some-menu-heading {
-    font-family: var(--font-heading);
-    font-style: normal;
-    font-size: 1.5rem;
+.column2-wrapper .sub-heading {
+    padding: 1rem 2rem;
+    background-color: rgb(255, 143, 98);
 }
 
 /* SOME NAVIGATION
@@ -57,11 +71,41 @@ html {
     margin: 0;
 }
 
- {
-    font-family: var(--font-heading);
+/* COLUMN 2
+-------------------------------------------------------------------------*/
+
+.fas {
+    font-size: 7rem;
+    color: var(--font-decoration)
+}
+
+.fa-cart-plus::before, .fa-cart-plus {
+    margin-left: -10px;
 }
 
 
+/* do best list */
+
+.best-list__item {
+    font-family: var(--font-bullets);
+    font-size: var(--bullet-items-size);
+    font-weight: bold;
+}
+
+/* experience section */
+.bullet {
+    font-family: var(--font-bullets);
+    font-size: var(--bullet-items-size);
+}
+
+.bullet:first-child {
+    font-weight: bold;
+}
 
 
+/* SKILLS SECTION */
 
+.skills-item__description {
+    font-family: var(--font-bullets);
+    font-size: var(--bullet-items-size);
+}

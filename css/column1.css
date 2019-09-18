@@ -1,0 +1,48 @@
+
+:root {
+    --animation-color: #6f8699;
+}
+
+
+.body {
+    background-color: #FAF3DD;
+}
+
+/* .header{} */
+/* portrait-wrapper */
+/* portrait */
+/* .profile-section {} */
+/* .column1-content {} */
+/* .contact-section */
+
+/* SOME NAVIGATION
+------------------------------------*/
+
+.menu-right {
+    border-left: 1.5px dashed var(--animation-color);
+    padding-left: 1rem;
+}
+
+/* ANIMATED UNDERLINE MENU-LINK */
+
+.menu_link {
+    position: relative;
+}
+
+.menu_link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--animation-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.menu_link:hover:after{
+    width: 100%; 
+    left: 0;
+}

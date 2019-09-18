@@ -1,6 +1,8 @@
 :root {
     --body-desktop-height: 150vh;
     --body-desktop-width: 100vw;
+    --page-padding-topbot: 2rem;
+    --page-padding-sides: 3rem;
 }
 
 * {
@@ -15,7 +17,7 @@ body {
     height: var(--body-desktop-height);
     width: var(--body-desktop-width);
     margin: 0;
-    padding: 0;
+    padding: var(--page-padding-topbot) var(--page-padding-sides);
 }
 
 a {
@@ -26,4 +28,8 @@ a {
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+address {
+    font-style: normal;
 }
