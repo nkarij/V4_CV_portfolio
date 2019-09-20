@@ -2,7 +2,10 @@
     --body-desktop-height: 150vh;
     --body-desktop-width: 100vw;
     --page-padding-topbot: 2rem;
-    --page-padding-sides: 3rem;
+    --page-padding-sides: 3rem; 
+    --col-small-padding-lr: 0 1rem 0 0;
+    --mobile-section-margin: 2rem 0;
+    --section-padding: 1rem 5rem;
 }
 
 * {
@@ -18,7 +21,14 @@ body {
     width: var(--body-desktop-width);
     margin: 0;
     padding: var(--page-padding-topbot) var(--page-padding-sides);
+    display: flex;
 }
+
+
+p {
+    margin: 0;
+}
+
 
 a {
     color: black;
